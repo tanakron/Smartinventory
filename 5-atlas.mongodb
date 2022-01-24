@@ -1,0 +1,44 @@
+use("sample_airbnb")
+
+
+//เรียกดู collection 
+// show("collections")
+
+// db.listingsAndReviews.find().limit(3)
+
+//แสดงห้องพักบาง ฟิลด์ที่ต้องการ
+db.listingsAndReviews.find(
+    {},
+    {
+       name:1,
+        listing_url:1,
+        room_type:1,
+        price:1,
+        images:{
+            picture_url:1
+        }
+        
+    }
+).limit(3)
+
+
+//หาห้องพักราคาไม่เกิน 20 และเป็นห้องแบบ private room
+//ขอดู 10 รายการแรก.  ต่ำสุดไป สูงสุด
+
+db.listingsAndReviews.find(
+    {
+        $and:[ 
+            {price:{$lte:20}},
+            {room_type:{$eq:'Private room'}}
+    ]},
+    {
+       name:1,
+        listing_url:1,
+        room_type:1,
+        price:1,
+        images:{  
+            picture_url:1
+        }
+        
+    }
+).sort({price:1}).limit(10)

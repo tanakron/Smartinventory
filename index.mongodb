@@ -1,0 +1,66 @@
+ const database = "constructiondb";
+ const collection ="buildings";
+ use(database);
+
+ //สร้าง collection places. เก็บรายชื่อที่ตั้งโรงพยาบาล
+
+//  db.places.insertMany(
+//     [
+//         {
+//             hospital:'โรงพยาบาลเปาโล เกษตร',
+//             location: {
+//                 type: 'Point',
+//                 coordinates: [100.5873335,13.8258669]
+//             },
+//             category: "private"
+//         },
+//         {
+//             hospital:'โรงพยาบาลศิริราช',
+//             location: {
+//                 type: 'Point',
+//                 coordinates: [100.4816011,13.7568346]
+//             },
+//             category: "public"
+//         },
+//         {
+//             hospital:'โรงพยาบาลลาดพร้าว',
+//             location: {
+//                 type: 'Point',
+//                 coordinates: [100.6215644,13.7785086]
+//             },
+//             category: "private"
+//         },
+//         {
+//             hospital:'โรงพยาบาลกรุงเทพ',
+//             location: {
+//                 type: 'Point',
+//                 coordinates: [100.581037,13.7487567]
+//             },
+//             category: "private"
+//         },
+
+//     ]
+// )
+
+
+//สร้าง index ไว้เพื่อค้นหา. location ใน collection places 
+
+// db.places.createIndex({location:'2dsphere'})
+// db.places.createIndex({location: '2dsphere'})
+// ค้นหาโรงพยาบาลที่มีระยะทาง ไม่เกิน 10 km จากพิกัดที่เลือก
+// db.places.find(
+//     {
+//         location:
+//         {
+//             $near:
+//             {
+//                 $geometry: {
+//                     type: 'Point',
+//                     coordinates:[100.5903509,13.8271532] // พิกัดปัจจุบัน
+//                 },
+//                 $minDistance:5000, // หน่วยเเป็นเมตร
+//                 $maxDistance:10000 // หน่วยเเป็นเมตร
+//             }
+//         }
+//     }
+// )

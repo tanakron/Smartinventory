@@ -1,0 +1,20 @@
+const database = 'smartinvdb';
+
+// Create a new database.
+use(database);
+
+// การเพิ่ม document หลายรายการพร้อมกัน
+db.blog.insertMany(
+    [
+        {
+            BlogName: 1,
+            BlogID:  1,
+            BlogTitle: "คณิต",
+            BlogDetail:"วิชาเลข",
+            BlogPicture:'/',
+            CreatedDate: "2021-11-21T17:00:00.000Z",
+            ModifiedDate: "2021-11-21T17:00:00.000Z"
+        },
+       
+    ]
+)

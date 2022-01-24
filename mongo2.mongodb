@@ -1,0 +1,272 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+ const database = 'ministock';
+// const collection = 'products';
+
+// Create a new database.
+use(database);
+use("ministock")
+// Create a new collection.
+// db.createCollection(collection);
+//คำสั่งสร้าง collection ใหม่และเพิ่ม document ลงไป
+// db.users.insertOne(
+// {
+//     name:"Tanakorn kahanun",
+//     email:"gsde@gmail.com",
+//     age:50
+// }
+
+// )
+
+// db.users.insertMany(
+//     [
+// {
+//     name:"Tanakorn kahanun",
+//     email:"gsde@gmail.com",
+//     age:50
+// },
+// {
+//     name:"สมชาย  ใจเย็น",
+//     email:"gfwfwdwdw@gmail.com",
+//     age:15
+// }
+// ]
+// )
+
+// db.products.insertMany(
+// [
+//  {
+// "id": "65",
+// "product_detail": "For the best sound in your home",
+// "product_name": "Microlab Sound bar",
+// "product_barcode": "93729339273802",
+// "product_qty": "20",
+// "product_price": "1899.00",
+// "product_date": "2020-04-23",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "63",
+// "product_detail": "test somthing",
+// "product_name": "test somthing",
+// "product_barcode": "3434343434343",
+// "product_qty": "12",
+// "product_price": "300.00",
+// "product_date": "2020-04-23",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "61",
+// "product_detail": "The new phone of the world",
+// "product_name": "Huawei P30 Pro",
+// "product_barcode": "8954214756325",
+// "product_qty": "5",
+// "product_price": "18500.00",
+// "product_date": "2020-04-23",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "60",
+// "product_detail": "The new phone of the world",
+// "product_name": "Huawei P30 Pro",
+// "product_barcode": "8954214756325",
+// "product_qty": "5",
+// "product_price": "18500.00",
+// "product_date": "2020-04-23",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "59",
+// "product_detail": "The new phone of the world",
+// "product_name": "Huawei P30 Pro",
+// "product_barcode": "8954214756325",
+// "product_qty": "5",
+// "product_price": "18500.00",
+// "product_date": "2020-04-23",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "58",
+// "product_detail": "The new phone of the world",
+// "product_name": "Huawei S2300",
+// "product_barcode": "111111111111",
+// "product_qty": "2",
+// "product_price": "25000.00",
+// "product_date": "2020-04-23",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "57",
+// "product_detail": "The new phone of the world",
+// "product_name": "Huawei Y2020 Pro",
+// "product_barcode": "111111111111",
+// "product_qty": "2",
+// "product_price": "18500.00",
+// "product_date": "2020-04-23",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "56",
+// "product_detail": "The new phone of the world",
+// "product_name": "Huawei P30 Pro",
+// "product_barcode": "8954214756325",
+// "product_qty": "5",
+// "product_price": "18500.00",
+// "product_date": "2020-04-22",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "55",
+// "product_detail": "lorem ipsome one thing of this2",
+// "product_name": "Smernoft2",
+// "product_barcode": "287548748877",
+// "product_qty": "3",
+// "product_price": "23.00",
+// "product_date": "2020-04-18",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "54",
+// "product_detail": "lorem ipsome one thing of this",
+// "product_name": "Smernoft",
+// "product_barcode": "87548748877",
+// "product_qty": "12",
+// "product_price": "187.00",
+// "product_date": "2020-04-17",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "53",
+// "product_detail": "",
+// "product_name": "Coffee Tea",
+// "product_barcode": "9938938938939",
+// "product_qty": "30",
+// "product_price": "333.00",
+// "product_date": "2019-09-17",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "52",
+// "product_detail": "",
+// "product_name": "Coffee Mugsssss",
+// "product_barcode": "87546898459745",
+// "product_qty": "20",
+// "product_price": "299.00",
+// "product_date": "2019-09-14",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// {
+// "id": "51",
+// "product_detail": "",
+// "product_name": "Samsung Note 14",
+// "product_barcode": "983903893043",
+// "product_qty": "3",
+// "product_price": "40000.00",
+// "product_date": "2019-09-05",
+// "product_image": "noimg.jpg",
+// "product_category": "electronic",
+// "product_status": "1"
+// },
+// ]
+// )
+
+//คำสั่งเรียกดูทั้งหมด collection
+
+// db.users.deleteOne({_id:ObjectId('61d68583ed0e2c995563ea73')})
+//คำสั่งสร้าง collection ใหม่และเพิ่ม document ลงไป หลายรายการ
+//   db.products.find() // select* from user
+// db.products.findOne() // ค้นหาข้อมูลเดียว
+// db.products.findOne({},{_id:0,name:1,age:1})   //เลือกฟิลด์
+// คำสั่ง เรียกดูdocument ทั้งหมด
+// db.users.find()[0].name //run ผ่าน triminal mongodb
+//การค้นหา แบบใส่เงื่อนไข เท่านั้น
+// db.users.find({name:'Tanakorn kahanun'})
+// db.users.find({name:'Tanakorn kahanun',age:50},{name:1})
+// db.users.find({name:'Tanakorn kahanun',age:50})
+
+//การค้นหาแบบ เล็กใหญ่ ไม่สำคัญ
+// db.users.find({name:/tanakorn kahanun/i})
+
+//ค้นหาด้วยคำสั่ง like ใช้สำหรับฟรอมค้นหา
+// db.users.find({name:/n/i})
+//ค้นหาด้วยคำสั่ง like แบบข้นต้นด้วย ใช้สำหรับฟรอมค้นหา
+// db.users.find({name:/^ta/i})
+//การค้นหา แบบลงท้าย  ใช้สำหรับฟรอมค้นหา
+// db.users.find({name:/ใจเย็น$/i})
+
+// db.users.insertMany([
+//     {name:'มงคลกิต',phone:'08761879466',social:['email','line']},
+//     {name:'ธรรมลง',phone:'049446461',social:['facebook','instagram']}
+// ])
+
+//การค้นหาใน array
+// db.users.find({social:['facebook','instagram']})
+// db.users.find({social:['facebook','line']})
+// กานสืบค้น โดยใช้ $eq
+// db.users.find({name:{$eq:"Tanakorn kahanun"}})
+// กานสืบค้น โดยใช้ $ne
+// db.users.find({name:{$ne:"Tanakorn kahanun"}}) // ใครมาก็ ได้ที่ไม่ใช่ชื่อนี้
+
+//  กานสืบค้น โดยใช้ $gt (มากกว่า)
+// db.users.find({age:{$gt:20}})
+
+//  กานสืบค้น โดยใช้ $gte (มากกว่าและ เท่ากับ)
+// db.users.find({age:{$gte:22}})
+
+//  กานสืบค้น โดยใช้ $lt (น้อยกว่า)
+//  db.users.find({age:{$lt:22}})
+
+//  กานสืบค้น โดยใช้ $lt (น้อยกว่าและ เท่ากับ)
+//  db.users.find({age:{$lte:22}})
+
+
+//  กานสืบค้น โดยใช้ $in (ค้นหาเฉพาะเจาะจงที่ต้องการ)
+//  db.users.find({social:{$in:['facebook','line']}})
+
+ //  กานสืบค้น โดยใช้ $in (ค้นหาเฉพาะเจาะจงที่ต้องการ เช่นคนที่ไม่มี line)
+//  db.users.find({social:{$nin:['line']}})
+//เรียงลำดับข้อมูล
+// db.users.find().sort({age:1}). // มากไปน้อย
+// db.users.find().sort({age:-1}). // น้อยไปมาก
+// การ ลีมิตข้อมูล
+// db.users.find().limit(2)
+// db.users.find().sort({age:1}).limit(2)
+
+//การอัพเดท document
+// db.users.updateOne({name:"Tanakorn kahanun"},{$set:{email:"ouwfuwfh@gmail.com",age:25}})
+
+//การอัพเดท updateMany  document หลายค่าในครั้งเดียว * ถ้าเจอตรงตามเงือนไข ก็จะแก้ได้หลายค่า
+//  db.users.updateMany({name:"Tanakorn kahanun"},{$set:{email:"ouwfuwfh@gmail.com",age:25}})
+
+//การลบ แบบ 1 document
+// db.users.deleteOne({name:'ธรรมลง'})
+//การลบ แบบ หลายๆ document
+// db.users.deleteMany({phone:'08761879466'})
+
+// db.users.insertOne({name:"ธรรมลง",phone:"024686486464",age:30,social:["email","line"]})
+

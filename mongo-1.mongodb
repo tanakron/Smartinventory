@@ -1,0 +1,36 @@
+use("mystore")
+// db.customers.find()
+// db.products.find()
+//เพิ่มข้อมูล แบบ ปกติ
+//  db.customers.insertOne(
+//     {
+//         name:'Tanakorn kahanun',
+//         email:'gsdgskm@gmail.com',
+//         tel:'546416843'
+//     }
+// )
+// db.showCollections
+// เพิ่มข้อมูลแบบ Object
+// db.customers.insertOne(
+//     {
+//         name:'Tanakorn kahanun',
+//         tel:{
+//             mobile:'0864154566',
+//             office:'024848545'
+//         }
+
+//     }
+// )
+// insert แบบ Object
+//  db.customers.insertOne(
+//     {
+//         name:'Tanakorn kahanun',
+//         email:['gsdgskm@gmail.com','feogm@gmail.com'],
+        
+//     }
+// )
+
+// ลบ แบบ เลือก id
+//  db.customers.deleteOne({_id:ObjectId('61d5a0d7d2515794db9750ee')})
+ db.customers.find()
+

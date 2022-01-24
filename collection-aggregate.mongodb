@@ -1,0 +1,55 @@
+ const database = "constructiondb";
+ const collection ="buildings";
+ use(database);
+// db.createCollection(collection);
+
+// db.employees.insertMany(
+//     [
+// {
+//     first:"Tanakorn",
+//     last:"kahanun",
+//     mobile:"09845848464",
+//     startyear:"2020",
+//     building_id:"city_hall",
+
+// },{
+//     first:"Wichai",
+//     last:"Somwi",
+//     mobile:"09844511",
+//     startyear:"2019",
+//     building_id:"city_hall",
+
+// },
+
+
+// ]
+// )
+
+// db.buildings.insertOne(
+//     {
+//         _id:"city_hall",
+//         name:"City Hall",
+//         city:"Bangkok",
+//         state:"IN"
+//     }
+// )
+
+// db.employees.find()
+
+// db.buildings.find()
+
+// //เขียนเชื่อข้อมูล ระหว่าง collection 
+// db.buildings.aggregate(
+
+//     [
+//         {
+//            
+//             $lookup: {
+//               from: 'employees',
+//               localField: '_id',
+//               foreignField: 'building_id',
+//               as: 'employees'
+//             }
+//         }
+//     ]
+// )
