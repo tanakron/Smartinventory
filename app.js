@@ -26,7 +26,6 @@ app.use(expressLayouts);
 app.set("layout", "./layouts/frontend");
 app.set("view engine", "ejs");
 
-// กำหนดค่าให้สามารถรับค่าจากฟอร์มได้
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -40,14 +39,13 @@ app.use(
   })
 );
 
-// เรียกใช้ Express flash
 app.use(flash());
 
 // เรียกใช้งาน Routes
 app.use("/", frontendRouter);
 app.use("/backend", backendRouter);
 app.use("/frontend", frontendRouter);
-// Run Express Server ที่ Port 5000
+
 app.listen(5000, () => {
   console.log("Server run at port 5000");
 });
