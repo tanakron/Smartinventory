@@ -26,6 +26,7 @@ app.use(expressLayouts);
 app.set("layout", "./layouts/frontend");
 app.set("view engine", "ejs");
 
+// กำหนดค่าให้สามารถรับค่าจากฟอร์มได้
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -39,6 +40,7 @@ app.use(
   })
 );
 
+// เรียกใช้ Express flash
 app.use(flash());
 
 // เรียกใช้งาน Routes
